@@ -69,9 +69,6 @@ PRED_OVER = np.array([30, 40, 50, 60, 70])
 TRUE_OVER = np.array([30, 40, 50, 60, 70])
 PRED_UNDER = np.array([10, 20, 30, 40, 50])
 
-
-print('Comparison between MAE, MAPE when average error is 20 depending on the relationship between actual and predicted value \n')
-
 print('When actual value is smaller than predicted value (Overestimating)')
 print('MAE:', MAE(TRUE_UNDER, PRED_OVER))
 print('MAPE:', MAPE(TRUE_UNDER, PRED_OVER))
