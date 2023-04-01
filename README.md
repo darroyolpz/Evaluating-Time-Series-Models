@@ -9,7 +9,7 @@ $MAE=\frac{1}{n}\displaystyle\sum_{i=1}^{n} |y_i-\hat{y}_i|$
 MAE, also known as L1 Loss, can be calculated by dividing the sum of the absolute differences between the predicted values and the actual values by the number of samples(n). Since this is the process for calculating an average, from now on we will refer to this as 'calculating the mean'. Since the scale of MAE is the same scale as the target variable being predicted, the meaning of the value can be understood intuitively.
 
 ```python
-import numpy as np #import numpy package
+import numpy as np
 
 def MAE(true, pred):
     '''
@@ -96,7 +96,7 @@ def SMAPE(true, pred):
     true: np.array 
     pred: np.array
     '''
-    return np.mean((np.abs(true-pred))/(np.abs(true) + np.abs(pred))) #we won't include 100 in this code since it's a constant
+    return np.mean((np.abs(true-pred))/(np.abs(true) + np.abs(pred)))
 
 print('Comparison between MAE, SMAPE when average error is 20 \n')
 
@@ -142,7 +142,8 @@ def RMSSE(true, pred, train):
     
     return msse ** 0.5
 
-TRAIN = np.array([10, 20, 30, 40, 50]) #create a random training dataset for calculating RMSSE
+# Create a random training dataset for calculating RMSSE
+TRAIN = np.array([10, 20, 30, 40, 50]) 
 
 print(RMSSE(TRUE_UNDER, PRED_OVER, TRAIN))
 print(RMSSE(TRUE_OVER, PRED_UNDER, TRAIN))
