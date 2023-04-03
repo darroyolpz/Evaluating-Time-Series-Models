@@ -112,12 +112,12 @@ We can observe that MAPE produced different values of 0.91 and 0.43 respectively
 
 ## RMSEE (Root Mean Squared Scaled Error)
 
-$RMSSE=\sqrt{\displaystyle\frac{\frac{1}{h}\sum_{i=n+1}^{n+h} (y_i-\hat{y}*i)^2}{\frac{1}{n-1}\sum*{i=2}^{n} (y_i-y_{i-1})^2}}$
+$RMSSE=\sqrt{\frac{\frac{1}{h}\sum_{i=n+1}^{n+h} (y_i-\hat{y}_{i})^2}{\frac{1}{n-1}\sum_{i=2}^{n} (y_i-y_{i-1})^2}}$
 
-$y_i$: Actual value to be predicted
-$\hat{y}_i$: Value predicted by the model
-$n$: Size of the training dataset
-$h$: Size of the test dataset
+- $y_i$: Actual value to be predicted
+- $\hat{y}_i$: Value predicted by the model
+- $n$: Size of the training dataset
+- $h$: Size of the test dataset
 
 RMSSE is a modified form of Mean Absolute Scaled Error and solves the problems of MAPE and SMAPE mentioned above. We have seen from above examples that MAPE and SMAPE result in an uneven overall error depending on the underestimation or overestimation of the model since they use the actual and predicted values of the test data to scale the MAE.
 
