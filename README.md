@@ -112,7 +112,7 @@ We can observe that MAPE produced different values of 0.91 and 0.43 respectively
 
 ## RMSEE (Root Mean Squared Scaled Error)
 
-$RMSSE = \sqrt{\frac{\frac{1}{h} \sum_{i=n+1}^{n+h} (y_i - \hat{y}_i)^2}{\frac{1}{n-1} \sum_{i=2}^{n} (y_i - y_{i-1})^2}}$
+$RMSSE=\sqrt{\displaystyle\frac{\frac{1}{h}\sum_{i=n+1}^{n+h}(y_i-\hat{y}*i)^2}{\frac{1}{n-1}\sum*{i=2}^{n} (y_i-y_{i-1})^2}}$
 
 
 - $y_i$: Actual value to be predicted
